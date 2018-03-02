@@ -1,0 +1,26 @@
+ace-viewport {
+    position: absolute !important;
+    
+    top: 0px;
+    bottom: 0px;
+    left: 400px;
+    right: 0px;
+
+    display: block;
+}
+
+.vis-selection
+{
+    background: #DAFECC;
+    position: absolute;
+}
+
+.vis-selection-access {
+    background: #ccdafe;
+    position: absolute;
+}
+
+.vis-selection-none-access {
+    background: #ededed;
+    position: absolute;
+}

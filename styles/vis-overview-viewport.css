@@ -1,0 +1,85 @@
+vis-overview-viewport {
+    position: absolute;
+    
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 400px;
+
+    display: block;
+
+    /*
+        This has to be here in order for the transition to work
+    */
+    -webkit-transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
+    background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAACdJREFUSA3t0DEBAAAAwqD1T+1vBohAYcCAAQMGDBgwYMCAAQMGfmAOLgABrSzR1AAAAABJRU5ErkJggg==');
+    background-repeat: repeat;
+    background-size: 3%;
+}
+
+vis-overview-viewport ul {
+    list-style: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+vis-overview-viewport ul li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+
+    cursor: pointer;
+}
+
+vis-overview-viewport ul li:hover {
+    color: green;
+}
+
+.listItemActive {
+    color: green;
+}
+
+#scope-title {
+    position: absolute;
+
+    top:0px;
+    left: 0px;
+    right: 0px;
+
+    height: 60px;
+}
+
+#scope-title h4,h5 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#vis-container {
+    position: absolute;
+
+    top: 60px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.parsing_error {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWdJREFUSA2910FOg0AUBmCHwKgxMR5B3EiiaXoA7+EN1CN5BT1NY22kK1x0X9PERZGKDHGa6fTNzP9oKRtg5r3/YyCZBDG9ubpbRmeTwXg8PzrAUQyHF+XP4jb6XcnZafX9kA+u077dIssuq+XiUTamUNhHMxCL8n6VJK/Z27To4wFatDHiWr6kef7Zwn3jNqq8NdwXTqFb8L5xF0rC+8J9qBPeFQ+hXrgrjqBBmIujKASjOAeF4RDORVmwC++CsmEbPy5FXRnboJpHj42dC21q9/a6fFL1sZDPau9Fe3VdpC8455P/4prTZNWyV2x+U5V1kFdtovr1UmPW4shbeMU+wDdHqs0gBCPBSI35EEGYE8ip9cKcIL0atMcJowEaNM9ILwkjjSZEXYcytuBQA4W4xnxZG7Cv0BUeGndlrmFXQSgYmaeyW5iaQAI5NbYh7AFOGLfWtIT6aZPJ+Xs6Gn1xg7rU65+2P881pGe5KXK1AAAAAElFTkSuQmCC');
+}
+
+
+.annotation {
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    pointer-events: none;
+}
